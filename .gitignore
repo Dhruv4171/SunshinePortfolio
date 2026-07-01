@@ -1,0 +1,22 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Assets (large images)
+assets/*.png
+assets/*.jpeg
+assets/*.jpg
+assets/*.gif
+assets/*.webp
+
