@@ -13,10 +13,4 @@ Desktop.ini
 # Logs
 *.log
 
-# Assets (large images)
-assets/*.png
-assets/*.jpeg
-assets/*.jpg
-assets/*.gif
-assets/*.webp
 
