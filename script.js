@@ -59,3 +59,19 @@ document.querySelectorAll('.gallery-item').forEach(item => {
 
 const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('aos-animate'); }); }, { threshold: 0.1 });
 document.querySelectorAll('[data-aos]').forEach(el => observer.observe(el));
+
+if (!('ontouchstart' in window)) {
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const num = this.getAttribute('href').replace('tel:', '');
+            navigator.clipboard.writeText(num).then(() => {
+                const tip = document.createElement('div');
+                tip.textContent = 'Number copied!';
+                tip.style.cssText = 'position:fixed;bottom:140px;right:24px;background:var(--primary);color:#fff;padding:10px 18px;border-radius:8px;font-size:14px;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,0.2);';
+                document.body.appendChild(tip);
+                setTimeout(() => tip.remove(), 2000);
+            });
+        });
+    });
+}
