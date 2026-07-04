@@ -1351,13 +1351,13 @@ section {
   right: 24px;
   width: 46px;
   height: 46px;
-  background: #25D366;
+  background: var(--primary);
   color: #fff;
   border: none;
   border-radius: 50%;
   font-size: 22px;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 58, 116, 0.4);
   z-index: 999;
   display: flex;
   align-items: center;
@@ -1367,9 +1367,10 @@ section {
 }
 
 .whatsapp-float:hover {
-  background: #1da952;
+  background: var(--accent);
   color: #fff;
   transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(249, 126, 1, 0.4);
 }
 
 .navbar-toggler {
