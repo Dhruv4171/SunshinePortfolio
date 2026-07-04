@@ -314,6 +314,24 @@ section {
   display: none !important;
 }
 
+.btn-location {
+  background: var(--primary);
+  color: #fff !important;
+  padding: 10px 22px !important;
+  border-radius: var(--radius-sm) !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.3px;
+  gap: 6px;
+}
+
+.btn-location:hover {
+  background: #002a55 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 58, 116, 0.35);
+  color: #fff !important;
+}
+
 /* ---------- Hero Section ---------- */
 .hero-section {
   position: relative;
