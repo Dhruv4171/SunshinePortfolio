@@ -720,7 +720,8 @@ section {
 .course-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-  border-color: transparent;
+  border-color: var(--accent);
+  border-width: 2px;
 }
 
 .course-card .card-img-top {
@@ -1886,6 +1887,8 @@ section {
 
   .course-card:hover {
     transform: translateY(-10px);
+    border-color: var(--accent);
+    border-width: 2px;
   }
 
   .process-card:hover,
