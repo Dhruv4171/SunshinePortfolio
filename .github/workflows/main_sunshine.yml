@@ -29,6 +29,12 @@ jobs:
           npm run build --if-present
           npm run test --if-present
 
+      - name: Fetch Google reviews
+        if: env.GOOGLE_PLACES_API_KEY != ''
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: node fetch-reviews.js
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:

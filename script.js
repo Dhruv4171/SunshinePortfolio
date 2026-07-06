@@ -75,3 +75,39 @@ if (!('ontouchstart' in window)) {
         });
     });
 }
+
+function loadReviews() {
+    const container = document.getElementById('reviews-container');
+    const stats = document.getElementById('review-stats');
+    if (!container) return;
+
+    fetch('reviews.json')
+        .then(r => { if (!r.ok) throw new Error('No reviews file'); return r.json(); })
+        .then(data => {
+            if (stats && data.overall) {
+                stats.textContent = `Rated ${data.overall.rating}/5 based on ${data.overall.totalReviews} Google reviews`;
+            }
+            if (!data.reviews || data.reviews.length === 0) {
+                container.innerHTML = '<div class="col-12 text-center" style="padding:40px 0;color:#777;">No reviews available yet.</div>';
+                return;
+            }
+            container.innerHTML = data.reviews.map(r => {
+                const stars = Array(r.rating).fill('<i class="fas fa-star"></i>').join('');
+                const initial = r.author.charAt(0).toUpperCase();
+                const text = r.text.length > 200 ? r.text.substring(0, 200) + '...' : r.text;
+                return `<div class="col-md-6 col-lg-4" data-aos>
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <div class="stars">${stars}</div>
+                        <p>${text || 'Great experience!'}</p>
+                        <div class="author"><div class="avatar">${initial}</div><div><div class="name">${r.author}</div><div class="role">${r.relativeTime || 'Google Review'}</div></div></div>
+                    </div>
+                </div>`;
+            }).join('');
+        })
+        .catch(() => {
+            container.innerHTML = '<div class="col-12 text-center" style="padding:40px 0;color:#777;">Reviews loading soon. Check back later!</div>';
+        });
+}
+
+document.addEventListener('DOMContentLoaded', loadReviews);

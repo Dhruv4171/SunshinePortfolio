@@ -1,0 +1,34 @@
+{
+  "lastUpdated": "2026-07-04T00:00:00.000Z",
+  "overall": {
+    "rating": 4.7,
+    "totalReviews": 350,
+    "name": "Sunshine Motor Driving School"
+  },
+  "reviews": [
+    {
+      "author": "Rakshita",
+      "rating": 5,
+      "text": "I saw a great boost in my confidence as compared to Day 1. It was an amazing experience. The instructor is very professional and a great teacher. I would 100% recommend to anyone who wants to start learning the wheel.",
+      "time": 0,
+      "relativeTime": "Google Review",
+      "profilePhoto": ""
+    },
+    {
+      "author": "Riya",
+      "rating": 5,
+      "text": "The best driving class in Jaipur. Sir was so humble and patient with me. He made sure that I learn right and don't get used to mistakes. Thank you Sunshine Motor Driving Classes.",
+      "time": 0,
+      "relativeTime": "Google Review",
+      "profilePhoto": ""
+    },
+    {
+      "author": "Aftab",
+      "rating": 5,
+      "text": "Sunshine is a great place to learn car driving. My instructor was patient, had excellent communication skills, and a friendly behaviour. A thorough professional.",
+      "time": 0,
+      "relativeTime": "Google Review",
+      "profilePhoto": ""
+    }
+  ]
+}
