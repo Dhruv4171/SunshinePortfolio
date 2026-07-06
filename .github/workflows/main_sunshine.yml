@@ -30,9 +30,9 @@ jobs:
           npm run test --if-present
 
       - name: Fetch Google reviews
-        if: env.GOOGLE_PLACES_API_KEY != ''
+        if: env.OUTSCRAPER_API_KEY != ''
         env:
-          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          OUTSCRAPER_API_KEY: ${{ secrets.OUTSCRAPER_API_KEY }}
         run: node fetch-reviews.js
 
       - name: Upload artifact for deployment job
