@@ -95,7 +95,7 @@ function loadReviews() {
                 const stars = Array(r.rating).fill('<i class="fas fa-star"></i>').join('');
                 const initial = r.author.charAt(0).toUpperCase();
                 const text = r.text.length > 200 ? r.text.substring(0, 200) + '...' : r.text;
-                return `<div class="col-md-6 col-lg-4" data-aos>
+                return `<div class="col-md-6 col-lg-4">
                     <div class="testimonial-card">
                         <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
                         <div class="stars">${stars}</div>
@@ -104,6 +104,10 @@ function loadReviews() {
                     </div>
                 </div>`;
             }).join('');
+            container.querySelectorAll('[data-aos]').forEach(el => {
+                el.classList.add('aos-animate');
+                observer.observe(el);
+            });
         })
         .catch((e) => {
             console.error('Reviews load error:', e);
