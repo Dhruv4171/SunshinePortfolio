@@ -105,7 +105,8 @@ function loadReviews() {
                 </div>`;
             }).join('');
         })
-        .catch(() => {
+        .catch((e) => {
+            console.error('Reviews load error:', e);
             container.innerHTML = '<div class="col-12 text-center" style="padding:40px 0;color:#777;">Reviews loading soon. Check back later!</div>';
         });
 }

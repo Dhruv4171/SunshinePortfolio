@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Sunshine Motor Driving School website",
   "scripts": {
-    "fetch-reviews": "node fetch-reviews.js",
     "test": "echo ok"
   }
 }
