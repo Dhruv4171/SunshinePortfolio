@@ -66,14 +66,6 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What documents are required for driving license enrollment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For learning license: Aadhaar card, address proof, passport-size photos, and medical certificate. For permanent DL: learning license, pass certificate from a registered school, and RTO fees."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Do you offer pick-up and drop service?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -86,14 +78,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Our standard training course is 15 days with 8 km of driving practice per day. Morning (6-9 AM) or evening (4-6 PM) batches available."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I practice on my own car?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you are welcome to use your own vehicle for training. Our instructors will guide you through all aspects of driving."
       }
     },
     {
@@ -208,7 +192,7 @@
           <div class="hero-trust">
             <span><i class="fas fa-shield-halved"></i> Certified Trainers</span>
             <span><i class="fas fa-car"></i> 5+ Training Vehicles</span>
-            <span><i class="fas fa-star"></i> 4.7 Justdial Rating</span>
+            <span class="hero-trust-highlight"><i class="fas fa-star"></i> 4.7 Justdial Rating</span>
             <span><i class="fas fa-id-card"></i> DL Assistance</span>
           </div>
           <p>Professional motor training, RTO consultancy, and door-to-door services by certified instructors. Start your driving journey with Sunshine Motor Driving School.</p>
@@ -361,12 +345,14 @@
       <div class="col-lg-4 col-md-6" data-aos>
         <div class="course-card">
           <div class="card-img-top">
-            <i class="fas fa-car"></i>
-            <div class="price-tag">Enquire for Price</div>
+            <img src="images/alto.jpg" alt="Maruti Suzuki Alto training car" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="card-img-fallback"><i class="fas fa-car"></i></div>
+            <div class="price-tag price-tag-quote">Get Quote</div>
           </div>
           <div class="card-body">
             <h5>Hatchback</h5>
             <div class="car-name">Maruti Suzuki Alto</div>
+            <div class="badge-row"><span class="mini-badge">Best for Beginners</span></div>
             <div class="specs">
               <div class="spec"><i class="fas fa-clock"></i><span>Duration</span><strong>15 Days</strong></div>
               <div class="spec"><i class="fas fa-road"></i><span>Daily</span><strong>8 km</strong></div>
@@ -386,12 +372,14 @@
         <div class="course-card">
           <div class="card-img-top" style="background:linear-gradient(135deg,#fff8f0,#ffeed9);">
             <div class="popular-badge">Most Popular</div>
-            <i class="fas fa-car-side"></i>
-            <div class="price-tag">Enquire for Price</div>
+            <img src="images/dzire.jpg" alt="Swift Dzire training car" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="card-img-fallback"><i class="fas fa-car-side"></i></div>
+            <div class="price-tag price-tag-quote">Get Quote</div>
           </div>
           <div class="card-body">
             <h5>Sedan</h5>
             <div class="car-name">Swift Dzire & Honda Amaze</div>
+            <div class="badge-row"><span class="mini-badge">Family Friendly</span></div>
             <div class="specs">
               <div class="spec"><i class="fas fa-clock"></i><span>Duration</span><strong>15 Days</strong></div>
               <div class="spec"><i class="fas fa-road"></i><span>Daily</span><strong>8 km</strong></div>
@@ -410,12 +398,14 @@
       <div class="col-lg-4 col-md-6" data-aos>
         <div class="course-card">
           <div class="card-img-top">
-            <i class="fas fa-truck"></i>
-            <div class="price-tag">Enquire for Price</div>
+            <img src="images/venue.jpg" alt="Hyundai Venue training car" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="card-img-fallback"><i class="fas fa-truck"></i></div>
+            <div class="price-tag price-tag-quote">Get Quote</div>
           </div>
           <div class="card-body">
             <h5>Compact SUV</h5>
             <div class="car-name">Hyundai Venue</div>
+            <div class="badge-row"><span class="mini-badge">Confident on Highways</span></div>
             <div class="specs">
               <div class="spec"><i class="fas fa-clock"></i><span>Duration</span><strong>15 Days</strong></div>
               <div class="spec"><i class="fas fa-road"></i><span>Daily</span><strong>8 km</strong></div>
@@ -579,6 +569,8 @@
     </div>
   </div>
 </section>
+
+<section class="faq-section" id="faq">
   <div class="container">
     <div class="sec-title text-center" data-aos>
       <div class="sub-title" style="justify-content:center;">FAQ</div>
@@ -589,9 +581,9 @@
         <div class="accordion" id="faqAccordion">
           <div class="accordion-item" data-aos>
             <h3 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What documents are required for enrollment?</button>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What documents are required for enrollment?</button>
             </h3>
-            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
               <div class="accordion-body">For learning license: Aadhaar card, address proof, passport-size photos, and medical certificate. For permanent DL: learning license, pass certificate from a registered school (we provide this), and RTO fees. We assist with the entire paperwork process.</div>
             </div>
           </div>
@@ -649,7 +641,30 @@
       <p id="review-stats" style="color:#777;margin-top:8px;"></p>
     </div>
     <div class="row g-4" id="reviews-container">
-      <div class="col-12 text-center" style="padding:40px 0;"><i class="fas fa-spinner fa-spin" style="font-size:24px;color:var(--accent);"></i></div>
+      <div class="col-12 col-md-6 col-lg-4" data-aos>
+        <div class="testimonial-skeleton">
+          <div class="sk-stars"></div>
+          <div class="sk-line"></div>
+          <div class="sk-line short"></div>
+          <div class="sk-author"><div class="sk-avatar"></div><div class="sk-name"></div></div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4" data-aos>
+        <div class="testimonial-skeleton">
+          <div class="sk-stars"></div>
+          <div class="sk-line"></div>
+          <div class="sk-line short"></div>
+          <div class="sk-author"><div class="sk-avatar"></div><div class="sk-name"></div></div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block" data-aos>
+        <div class="testimonial-skeleton">
+          <div class="sk-stars"></div>
+          <div class="sk-line"></div>
+          <div class="sk-line short"></div>
+          <div class="sk-author"><div class="sk-avatar"></div><div class="sk-name"></div></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -678,7 +693,7 @@
           <div class="item"><i class="fas fa-phone-alt"></i><div><h6>Phone</h6><p><a href="tel:+918502010101">+91 85020 10101</a></p></div></div>
           <div class="item"><i class="fab fa-whatsapp" style="color:var(--accent);"></i><div><h6>WhatsApp</h6><p><a href="https://wa.me/918502010101?text=Hi%2C%20I%20want%20to%20enquire%20about%20driving%20classes%20at%20Sunshine%20Motor%20Driving%20School" target="_blank">+91 85020 10101</a></p></div></div>
           <div class="item"><i class="fas fa-clock"></i><div><h6>Hours</h6><p>Monday - Sunday: 6:00 AM - 6:00 PM</p></div></div>
-          <div class="item"><i class="fas fa-globe"></i><div><h6>Website</h6><p><a href="http://sunshinemotordrivingschool.com" target="_blank">sunshinemotordrivingschool.com</a></p></div></div>
+          <div class="item"><i class="fas fa-globe"></i><div><h6>Website</h6><p><a href="https://sunshinemotordrivingschool.com" target="_blank">sunshinemotordrivingschool.com</a></p></div></div>
         </div>
       </div>
       <div class="col-lg-7" data-aos>

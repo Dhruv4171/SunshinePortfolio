@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://sunshinemotordrivingschool.com</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+
+    <!-- Image sitemap entries help these show up in Google Image Search
+         for queries like "driving school Jaipur", "car training Malviya Nagar" -->
+    <image:image>
+      <image:loc>https://i.ibb.co/NDWLmQD/Chat-GPT-Image-Jul-2-2026-08-10-21-PM.png</image:loc>
+      <image:title>Sunshine Motor Driving School Jaipur - Training Fleet</image:title>
+      <image:caption>Best driving school training fleet in Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/n8fQFYYQ/Chat-GPT-Image-Jul-4-2026-11-23-30-AM.png</image:loc>
+      <image:title>Car Driving Training in Malviya Nagar Jaipur</image:title>
+      <image:caption>Sunshine Motor Driving School car driving training in Malviya Nagar Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/2YPS8hFy/Chat-GPT-Image-Jul-3-2026-12-04-01-PM.png</image:loc>
+      <image:title>Driving Training Session Jaipur</image:title>
+      <image:caption>Driving training session at Sunshine Motor driving school Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/N6qTY8SC/Chat-GPT-Image-Jul-3-2026-12-03-51-PM.png</image:loc>
+      <image:title>Car Driving Class Jaipur</image:title>
+      <image:caption>Car driving class session at driving school Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/M5D1Rn1z/Chat-GPT-Image-Jul-2-2026-08-14-25-PM.png</image:loc>
+      <image:title>Best Driving School Jaipur Training Session</image:title>
+      <image:caption>Driving training session at best driving school Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://i.ibb.co/BHsMzshn/Logo.png</image:loc>
+      <image:title>Sunshine Motor Driving School Logo</image:title>
+    </image:image>
   </url>
 </urlset>

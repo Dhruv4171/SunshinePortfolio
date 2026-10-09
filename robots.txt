@@ -1,3 +1,16 @@
+# Sunshine Motor Driving School - robots.txt
+
 User-agent: *
 Allow: /
+
+# Explicitly welcome image/search crawlers relevant to local business discovery
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://sunshinemotordrivingschool.com/sitemap.xml
