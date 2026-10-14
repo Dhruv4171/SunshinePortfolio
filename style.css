@@ -806,7 +806,8 @@ section {
   height: 200px;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(135deg, #f0f4f8, #e8ecf1);
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -821,8 +822,15 @@ section {
 .course-card .card-img-top img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 8px 12px;
   display: block;
+  background: #ffffff;
+  transition: transform 0.35s ease;
+}
+
+.course-card:hover .card-img-top img {
+  transform: scale(1.05);
 }
 
 /* Hidden by default; only shown via onerror if the real photo fails to load */
