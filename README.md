@@ -12,7 +12,7 @@ Professional website for Sunshine Motor Driving School, Malviya Nagar, Jaipur. E
 ## Features
 
 - Mobile-first responsive design (380px → 1200px+)
-- Hero enquiry form → WhatsApp integration (`wa.me/918502010101`)
+- Hero enquiry form → WhatsApp integration (`wa.me/917688989697`)
 - Course cards (Hatchback / Sedan / Compact SUV) with pricing
 - FAQ accordion, gallery lightbox, scroll-to-top button
 - JSON-LD structured data for SEO

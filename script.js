@@ -22,7 +22,7 @@ function handleFormSubmit(form) {
             `Course: ${data.get('course') || 'Not selected'}`,
             `Message: ${data.get('message') || 'Please call me back.'}`
         ].join('\n');
-        window.open(`https://wa.me/918502010101?text=${encodeURIComponent(message)}`, '_blank');
+        window.open(`https://wa.me/917688989697?text=${encodeURIComponent(message)}`, '_blank');
         this.reset();
         const btn = this.querySelector('button[type="submit"]');
         if (btn) {
